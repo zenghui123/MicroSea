@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <RelativeLayout
+        android:layout_above="@+id/radioGroup_home"
+        android:id="@+id/relativeLayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.example.zh.microsea.fragment.HomeFragment"
+            android:id="@+id/fragment_home"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView
+
+        android:layout_above="@+id/radioGroup_home"
+        android:background="#50000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RadioGroup
+        android:paddingTop="10dp"
+            android:id="@+id/radioGroup_home"
+           android:orientation="horizontal"
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+        android:checkedButton="@+id/radioButton_home">
+           <RadioButton
+                android:textColor="@drawable/home_color_selector"
+               android:id="@+id/radioButton_home"
+               android:gravity="center"
+               android:text="首页"
+
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:background="@null"
+               android:drawableTop="@drawable/home_selector"
+               />
+           <RadioButton
+
+               android:textColor="@drawable/home_color_selector"
+               android:id="@+id/radioButton_museum"
+               android:gravity="center"
+               android:text="乡情馆"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:background="@null"
+               android:drawableTop="@drawable/museum_selector"
+               />
+
+        <RadioButton
+
+            android:textColor="@drawable/home_color_selector"
+            android:id="@+id/radioButton_car"
+            android:gravity="center"
+            android:text="购物车"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:background="@null"
+               android:drawableTop="@drawable/car_selector"
+               />
+           <RadioButton
+
+               android:textColor="@drawable/home_color_selector"
+               android:id="@+id/radioButton_my"
+               android:gravity="center"
+               android:text="我的"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:button="@null"
+               android:background="@null"
+               android:drawableTop="@drawable/my_selector"
+               />
+
+       </RadioGroup>
+
+
+</RelativeLayout>
